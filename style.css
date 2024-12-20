@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    font-size: 60px;
+    color: #fff;
+}
+
+body {
+    background-color: #000;
+}
+
+main {
+    margin: 100px;
+    justify-items: center;
+    text-align: center;
+}
+h1 {
+    margin: 25px;
+}
+
+#album {
+    display: grid;
+    grid-template-columns: repeat(2, 0fr);
+    grid-gap: 5px;
+}
+
+#mini-album {
+    display: grid;
+    grid-template-columns: repeat(2, 0fr);
+    grid-gap: 2px;
+
+}
+.pequeno {
+    height: 250px;
+    width: 250px;
+}
+
+.grande {
+    height: 500px;
+    width: 500px;
+}
+.image {
+    overflow: hidden;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image:hover img {
+    transform: scale(1.1);
+}
